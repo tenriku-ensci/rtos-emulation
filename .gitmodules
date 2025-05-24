@@ -2,3 +2,4 @@
     path = rt-thread
     url = https://github.com/RT-Thread/rt-thread
     branch = v5.0.0
+    shallow = true
