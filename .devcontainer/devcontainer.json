@@ -1,0 +1,13 @@
+{
+    "name": "RT-Thread 5.0.0",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools"
+    ],
+    "remoteUser": "root"
+}
