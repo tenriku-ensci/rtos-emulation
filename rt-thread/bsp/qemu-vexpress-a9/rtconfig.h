@@ -44,6 +44,7 @@
 /* Memory Management */
 
 #define RT_PAGE_MAX_ORDER 11
+#define RT_PAGE_AFFINITY_BLOCK_SIZE 0x1000
 #define RT_USING_MEMPOOL
 #define RT_USING_SMALL_MEM
 #define RT_USING_MEMHEAP
@@ -142,6 +143,7 @@
 #define RT_USING_MTD_NOR
 #define RT_USING_MTD_NAND
 #define RT_MTD_NAND_DEBUG
+#define RT_USING_BLK
 #define RT_USING_RTC
 #define RT_USING_SOFT_RTC
 #define RT_USING_SDIO
