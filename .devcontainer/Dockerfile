@@ -9,6 +9,8 @@ RUN apt-get update && \
         python3 \
         python3-pip \
         gcc-arm-none-eabi \
+        libnewlib-arm-none-eabi \
+        libstdc++-arm-none-eabi-newlib \
         gdb-multiarch \
         scons \
     && rm -rf /var/lib/apt/lists/*
