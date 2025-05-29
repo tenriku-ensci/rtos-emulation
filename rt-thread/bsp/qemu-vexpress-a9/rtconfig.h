@@ -424,6 +424,8 @@
 
 /* Onboard Peripheral Drivers */
 
+#define BSP_USING_UART
+#define BSP_USING_UART0
 #define RT_USING_UART0
 #define RT_USING_UART1
 /* end of Onboard Peripheral Drivers */
