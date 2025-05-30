@@ -27,3 +27,21 @@ bash qemu-nographic.sh
 ```
 
 The script starts `qemu-system-arm` in headless mode and boots the `rtthread.bin` image. Once the boot process finishes you should see the RT-Thread shell prompt in the terminal. If no output appears, ensure `BSP_USING_UART0` is enabled in `.config` and rebuild.
+
+## Minimal Cortex-M7 BSP
+
+A lightweight BSP using QEMU's `mps2-an500` machine is also available. Build it with:
+
+```bash
+cd rt-thread/bsp/qemu-cortex-m7-test
+scons -j$(nproc)
+```
+
+Run the image with:
+
+```bash
+cd rt-thread/bsp/qemu-cortex-m7-test
+./qemu-nographic.sh
+```
+
+The board will boot and print the RT-Thread banner on the serial console.
