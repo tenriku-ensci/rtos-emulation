@@ -1,0 +1,14 @@
+#ifndef __BOARD_H__
+#define __BOARD_H__
+
+#include <rtconfig.h>
+#include <stdint.h>
+
+extern unsigned int __bss_end;
+
+#define HEAP_BEGIN ((void *)&__bss_end)
+#define HEAP_END   ((void *)0x20080000)
+
+void rt_hw_board_init(void);
+
+#endif

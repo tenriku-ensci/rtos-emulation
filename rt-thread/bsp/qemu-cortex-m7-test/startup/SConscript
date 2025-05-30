@@ -1,0 +1,8 @@
+from building import *
+
+src = Glob('*.S')
+CPPPATH = [GetCurrentDir()]
+
+group = DefineGroup('Startup', src, depend=[''], CPPPATH=CPPPATH)
+
+Return('group')
