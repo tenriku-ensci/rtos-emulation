@@ -1,0 +1,9 @@
+from building import *
+
+cwd = GetCurrentDir()
+src = Glob('*.c') + Glob('../startup_gcc.S')
+CPPPATH = [cwd]
+
+group = DefineGroup('Drivers', src, depend=[''], CPPPATH=CPPPATH)
+
+Return('group')
